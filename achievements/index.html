@@ -1,1 +1,571 @@
+<html>
+<head><title>IEEE Young Professionals Bangalore-Achievements
+</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" href="../IEEEBangalore.PNG" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<style>body {
+  margin-top: 60px;
+  font-size: 14px;
+  font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+  background-color: #E5E9ED;
+}
 
+/* entire container, keeps perspective */
+.card-container {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  margin-bottom: 30px;
+}
+.card-container:hover .card, .card-container.hover .card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card-container.static:hover .card, .card-container.static.hover .card {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+/* flip the pane when hovered */
+/* flip speed goes here */
+.card {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*        Style */
+.card {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 4px;
+  color: #444444;
+}
+
+.card-container, .front, .back {
+  width: 100%;
+  height: 420px;
+  border-radius: 4px;
+}
+
+.card .cover {
+  height: 105px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+.card .cover img {
+  width: 100%;
+}
+.card .user {
+  border-radius: 50%;
+  display: block;
+  height: 120px;
+  margin: -55px auto 0;
+  overflow: hidden;
+  width: 120px;
+}
+.card .user img {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 4px solid #FFFFFF;
+  width: 100%;
+}
+.card .content {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  padding: 10px 20px 20px;
+}
+.card .content .main {
+  min-height: 160px;
+}
+.card .back .content .main {
+  height: 215px;
+}
+.card .name {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 10px 0 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.card h5 {
+  margin: 5px 0;
+  font-weight: 400;
+  line-height: 20px;
+}
+.card .profession {
+  color: #999999;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card .footer {
+  border-top: 1px solid #EEEEEE;
+  color: #999999;
+  margin: 30px 0 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+.card .footer .social-links {
+  font-size: 18px;
+}
+.card .footer .social-links a {
+  margin: 0 7px;
+}
+.card .header {
+  padding: 15px 20px;
+  height: 90px;
+}
+.card .motto {
+  border-bottom: 1px solid #EEEEEE;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*      Just for presentation */
+.title {
+  color: #506A85;
+  text-align: center;
+  font-weight: 300;
+  font-size: 44px;
+  margin-bottom: 90px;
+  line-height: 90%;
+}
+.title small {
+  font-size: 17px;
+  color: #999;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.space-50 {
+  height: 50px;
+  display: block;
+}
+
+.space-200 {
+  height: 200px;
+  display: block;
+}
+
+.white-board {
+  background-color: #FFFFFF;
+  min-height: 200px;
+  padding: 60px 60px 20px;
+}
+
+.ct-heart {
+  color: #F74933;
+}
+
+pre.prettyprint {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.atv, .str {
+  color: #05AE0E;
+}
+
+.tag, .pln, .kwd {
+  color: #3472F7;
+}
+
+.atn {
+  color: #2C93FF;
+}
+
+.pln {
+  color: #333;
+}
+
+.com {
+  color: #999;
+}
+
+</style><link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<header class="header">
+  <a href="" class="logo"><img src="../IEEEBangalore.PNG" alt="IEEEBangalore"  width="150" height="50" ></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+  <li><a href="../index.html"> Home </a></li>
+    <li><a href="../team.html">Team-2020</a></li>
+    <li><a href="../Events/index.html">Events</a></li>
+    <li><a href="../reg/index.html">Event Registration Link</a></li>
+    
+	 <li><a href="../contact.html">Contact Us </a></li>
+	 
+ </ul>
+</header>
+<div class="body">
+<div class="container">
+  <div class="row">
+    <h1 class="title">
+     <br><br> Achievements and Awards:<br /><small></small>
+    </h1>
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="../bb.jpg" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="../11.JFIF" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">
+                    Kartik Kulkarni
+                  </h3>
+                  <p class="profession">
+                   Bangalore Section in 2011
+                  </p>
+                  
+                </div>
+                <div class="footer">
+                 
+                </div>
+              </div>
+            </div>
+            <!--end front panel-->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">
+                  
+                </h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h4 class="text-center">
+                  
+                  </h4>
+                  <h3>
+                   
+                  </p>
+                  <h4 class="text-center">
+                   <br><br> Bangalore Section in 2011
+                  </h4>
+                <br><br>  <h3>
+                   For dynamic leadership in spearheading humanitarian and innovative engagement opportunities for young IEEE engineering professionals in India.
+                   </p>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social-links text-center">
+                 
+                </div>
+              </div>
+            </div>
+            <!--end back panel-->
+          </div>
+          <!--end card-->
+        </div>
+        <!--end card-container-->
+      </div>
+      <!--end col-md-4 col-sm-6-->
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="../bb.jpg" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="../11.JFIF" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">
+                 Manjunath Iyer
+                  </h3>
+                  <p class="profession">
+                   Bangalore Section in 2013:
+                  </p>
+                  
+                </div>
+                <div class="footer">
+                  <div class="rating">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end front panel-->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">
+                 
+                </h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h4 class="text-center">
+                  
+                  </h4>
+                  <h3>
+                   
+                  </p>
+                  <h4 class="text-center">
+                    Bangalore Section in 2013
+                  </h4>
+                 <br><br> <h3>
+                   For continuous support to the IEEE Teacher In-Service Program (TISP) and Student Transition & Elevation Partnership (STEP) events.
+                  </h3>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social-links text-center">
+                </div>
+              </div>
+            </div>
+            <!--end back panel-->
+          </div>
+          <!--end card-->
+        </div>
+        <!--end card-container-->
+      </div>
+      <!--end col sm 3-->
+      <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="../bb.jpg" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="../11.JFIF" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">
+                    Nipun Manral
+                  </h3>
+                  <p class="profession">
+                    Bangalore Section 2015
+                  </p>
+                  
+                </div>
+                <div class="footer">
+                  <div class="rating">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end front panel-->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">
+                  
+                </h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h4 class="text-center">
+                  
+                  </h4>
+                  <h3>
+                   
+                  </p>
+                  <h4 class="text-center" >
+                   Bangalore Section 2015
+                  </h6>
+                 <br><br><p>
+                   For exemplary leadership and contribution toward student and young professional activities and for continuous efforts to elevate the technical and professional development of IEEE members. Also awarded with IEEE Asia Pacific Young Professional Outstanding Volunteer Award 2016, IEEE Bangalore Best Volunteer Award 2015, IEEE Asia Pacific Outstanding Young Professional Affinity Group Award 2015, IEEE, MGA Young Professionals Achievement Award 2015.
+                  </p>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social-links text-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="../bb.jpg" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="../11.JFIF" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">
+                   Abhishek Appaji
+                  </h3>
+                  <p class="profession">
+                    Bangalore Section 2015
+                  </p>
+                  
+                </div>
+                <div class="footer">
+                  <div class="rating">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end front panel-->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">
+                  
+                </h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h4 class="text-center">
+                  
+                  </h4>
+                  <h3>
+                   
+                  </p>
+                  <h4 class="text-center" >
+                   Bangalore Section 2015
+                  </h4>
+                  <br><h3>
+New Initiative Program Award at IEEE Region 10 Student, Young Professional, Women in Engineering Congress 2015 held from 9th to 12th July 2015 at Colombo, Srilanka. Out standing volunteer award for Bangalore Section 2019.                  </p>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social-links text-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="col-md-4 col-sm-6">
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="cover">
+                <img src="../bb.jpg" />
+              </div>
+              <div class="user">
+                <img class="img-circle" src="../11.JFIF" />
+              </div>
+              <div class="content">
+                <div class="main">
+                  <h3 class="name">
+                   Dr. Ashwini Appaji
+                  </h3>
+                  <p class="profession">
+                    Bangalore Section 2015
+                  </p>
+                  
+                </div>
+                <div class="footer">
+                  <div class="rating">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end front panel-->
+            <div class="back">
+              <div class="header">
+                <h5 class="motto">
+                  
+                </h5>
+              </div>
+              <div class="content">
+                <div class="main">
+                  
+                  <h3>
+                   
+                  </p>
+                  <h4 class="text-center" >
+                   Bangalore Section 2015
+                  </h4>
+                 <br><br><br><br> <h3>
+ Best Presentation at R10 congress 2018 for YP track and poster presentation at Bali Indonesia. Out standing YP Volunteer award 2019 Bangalore section.                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+</body>
+</html>
