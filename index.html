@@ -1,571 +1,429 @@
-<html>
-<head><title>IEEE Young Professionals Bangalore-Achievements
-</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="icon" href="../IEEEBangalore.PNG" type="image/gif" sizes="16x16">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<style>body {
-  margin-top: 60px;
-  font-size: 14px;
-  font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
-  background-color: #E5E9ED;
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="IEEEBangalore.PNG" type="image/gif" sizes="16x16">
+  <title>IEEE Young Professionals Bangalore</title>
+  <link rel="stylesheet" href="./style.css">
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+<style>
+
+.img1 {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+
+h2 {
+  font-size: 180%;
+  font-weight: 700px;
+  text-align: center;
+  padding-top: 2%
+}
+h3 {
+  font-size: 175%;
+  line-height: 155%;
+  padding: 5% 0;
+}
+p {
+  font-size: 110%;
+  line-height: 150%;
+  padding: 1%;
+  text-indent: 2%;
+  text-align: justify;
+  color: #F5F5F5;
 }
 
-/* entire container, keeps perspective */
-.card-container {
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  margin-bottom: 30px;
-}
-.card-container:hover .card, .card-container.hover .card {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-.card-container.static:hover .card, .card-container.static.hover .card {
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-
-/* flip the pane when hovered */
-/* flip speed goes here */
-.card {
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  -o-transition: -o-transform 0.5s;
-  transition: transform 0.5s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #FFF;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
-}
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-}
-
-/* back, initially hidden pane */
-.back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-/*        Style */
-.card {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border-radius: 4px;
-  color: #444444;
-}
-
-.card-container, .front, .back {
+header {
+  background-color: #6991AC;
   width: 100%;
-  height: 420px;
-  border-radius: 4px;
+  height: 86px;
 }
-
-.card .cover {
-  height: 105px;
-  overflow: hidden;
+#header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#logo {
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 60px;
+  background: url() no-repeat center;
+}
+/*---start navigation---*/
+nav {
+  float: right;
+  padding: 25px 20px 0 0;
+}
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url() center;
+}
+a:hover#menu-icon {
   border-radius: 4px 4px 0 0;
 }
-.card .cover img {
+ul {
+  list-style-type: none;
+}
+nav ul li {
+  font-size: 150%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+nav ul li a {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #C3D7DF;
+}
+.current {
+  color: #C3D7DF;
+}
+/*---end of navigation---*/
+.banner {
+  width: 100%;
+  background-color: #6991AC;
+}
+.banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.one-fourth {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+#html {
+  background-color: #F1AA90;
+}
+#css {
+  background-color: #8BE9AD;
+}
+#seo {
+  background-color: #AADCD2;
+}
+#social {
+  background-color: #A2b2C1;
+}
+.one-fourth i {
+  color: #F0F0F0;
+  font-size: 500%;
+  padding: 13% 0 4% 0;
+}
+.inner-wrapper {
+  float: left;
+  width: 100%;
+  background-color: #C3D7DF;
+}
+article {
+  float: left;
+  width: 50%;
+  margin; 0 auto;
+  height: auto;
+}
+#tablet {
+  background-color: #C3D7DF;
+}
+aside {
+  width: 50%;
+  float: right;
+  margin: 0 auto;
+  height: auto;
+}
+#tablet2 {
+  background-color: #A2B1C1;
+}
+#mobile {
+  background-color: #BEB9AD;
+}
+#desktop {
+  background-color: #F1AA90;
+}
+.inner-wrapper-2 {
+  width: 100%;
+  float: left;
+  background-color: #C3D7DF;
+}
+.inner-wrapper-3 {
+  width: 100%;
+  float: left;
+  background-color: #AADCD2;
+}
+.one-third {
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+}
+#google {
+  background-color: #A2B1C1;
+}
+#marketing {
+  background-color: #BEB98D;
+}
+#customers {
+  background-color: #AADCD2;
+}
+#smelly {
+  background-color: #AADCD2;
+  padding: 0 0 1%;
+  clear: both;
+}
+/*--footer---*/
+footer {
+  background-color: #6991AC;
   width: 100%;
 }
-.card .user {
-  border-radius: 50%;
-  display: block;
-  height: 120px;
-  margin: -55px auto 0;
-  overflow: hidden;
-  width: 120px;
-}
-.card .user img {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 4px solid #FFFFFF;
-  width: 100%;
-}
-.card .content {
-  background-color: rgba(0, 0, 0, 0);
-  box-shadow: none;
-  padding: 10px 20px 20px;
-}
-.card .content .main {
-  min-height: 160px;
-}
-.card .back .content .main {
-  height: 215px;
-}
-.card .name {
-  font-size: 22px;
-  line-height: 28px;
-  margin: 10px 0 0;
-  text-align: center;
-  text-transform: capitalize;
-}
-.card h5 {
-  margin: 5px 0;
-  font-weight: 400;
-  line-height: 20px;
-}
-.card .profession {
-  color: #999999;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.card .footer {
-  border-top: 1px solid #EEEEEE;
-  color: #999999;
-  margin: 30px 0 0;
-  padding: 10px 0 0;
+.social {
+  list-style-type: none;
   text-align: center;
 }
-.card .footer .social-links {
-  font-size: 18px;
+.social li {
+  display: inline;
 }
-.card .footer .social-links a {
-  margin: 0 7px;
+.social i {
+  font-size: 450%;
+  margin: 1%;
+  padding: 5% 5% 5% 4%;
+  color: #C3D7DF;
 }
-.card .header {
-  padding: 15px 20px;
-  height: 90px;
+.social i:hover {
+  color: #f5f5f5;
 }
-.card .motto {
-  border-bottom: 1px solid #EEEEEE;
-  color: #999999;
-  font-size: 14px;
-  font-weight: 400;
-  padding-bottom: 10px;
+/*--- begining of second footer---*/
+footer.second {
+  border-top: 2px solid #AADCD2;
+  background-color: #544859;
+  max-height: 35px;
+}
+footer.second p{
   text-align: center;
+}
+/*---media start----*/
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 150%;
+  }
+  h3 {
+    font-size: 125%;
+  }
+  p {
+    font-size: 110%;
+  }
+  header {
+    position: absolute;
+  }
+  #logo {
+    margin: 15px 0 20px 25px;
+    background: url() no-repeat center;
+  }
+  #menu-icon {
+    display: inline-block;
+    }
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #6991AC;
+    padding: 20px;
+    right: 20px;
+    top: 60px;
+    border: 1px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 50%;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .banner {
+    padding-top: 86px;
+  }
+  .one-fourth {
+    float: left;
+    width: 100%;
+  }
+  .one-fourth i {
+    font-size: 350%;
+    padding: 4% 0 1% 0;
+  }
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  .hand-mobile {
+    display: none;
+  }
+  .one-third {
+    width: 100%;
+  }
+  .social i {
+    font-size: 180%;
+  }
 }
 
-/*      Just for presentation */
-.title {
-  color: #506A85;
-  text-align: center;
-  font-weight: 300;
-  font-size: 44px;
-  margin-bottom: 90px;
-  line-height: 90%;
-}
-.title small {
-  font-size: 17px;
-  color: #999;
-  text-transform: uppercase;
+
+.foo {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.body2 {
+  background-image: url("");
+  height: 25vh;
+  font-family: 'Raleway', sans-serif;
+}
+.footsie {
+  background: rgba(9, 0, 0, 83);
+  border-top: 0.0625em solid lightgrey;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.95);
+  height: auto;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+}
+.footsie .leftFooter,
+.footsie .rightFooter,
+.footsie .middleFooter {
+  flex: 1;
+  padding: 0.2em;
+}
+.footsie ul {
+  list-style-type: none;
+}
+.footsie .list {
+  padding-top: 0.6em;
+}
+.footsie .list a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+}
+.footsie .google {
+  text-decoration: underline;
+}
+.footsie p {
+  padding: 1.25em;
+}
+.footsie span {
+  font-size: 1.2em;
+  color: #1F384D;
 }
 
-.space-50 {
-  height: 50px;
-  display: block;
-}
 
-.space-200 {
-  height: 200px;
-  display: block;
-}
 
-.white-board {
-  background-color: #FFFFFF;
-  min-height: 200px;
-  padding: 60px 60px 20px;
-}
-
-.ct-heart {
-  color: #F74933;
-}
-
-pre.prettyprint {
-  background-color: #ffffff;
-  border: 1px solid #999;
-  margin-top: 20px;
-  padding: 20px;
-  text-align: left;
-}
-
-.atv, .str {
-  color: #05AE0E;
-}
-
-.tag, .pln, .kwd {
-  color: #3472F7;
-}
-
-.atn {
-  color: #2C93FF;
-}
-
-.pln {
-  color: #333;
-}
-
-.com {
-  color: #999;
-}
-
-</style><link rel="stylesheet" href="../style.css">
-
+</style>
 </head>
 <body>
+<!-- partial:index.partial.html -->
 <header class="header">
-  <a href="" class="logo"><img src="../IEEEBangalore.PNG" alt="IEEEBangalore"  width="150" height="50" ></a>
+  <a href="" class="logo"><img src="IEEEBangalore.PNG" alt="IEEEBangalore"  width="150" height="50" ></a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-  <li><a href="../index.html"> Home </a></li>
-    <li><a href="../team.html">Team-2020</a></li>
-    <li><a href="../Events/index.html">Events</a></li>
-    <li><a href="../reg/index.html">Event Registration Link</a></li>
-    
-	 <li><a href="../contact.html">Contact Us </a></li>
+    <li><a href="team.html">TEAM-2020</a></li>
+    <li><a href="Events/index.html">Events</a></li>
+    <li><a href="achievements/index.html">Achievements</a></li>
+    <li><a href="reg/index.html"> Event Registration Link </a></li>
+	 <li><a href="contact.html">Contact Us </a></li>
 	 
  </ul>
-</header>
-<div class="body">
-<div class="container">
-  <div class="row">
-    <h1 class="title">
-     <br><br> Achievements and Awards:<br /><small></small>
-    </h1>
-    <div class="col-sm-10 col-sm-offset-1">
-      <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="../bb.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="../11.JFIF" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">
-                    Kartik Kulkarni
-                  </h3>
-                  <p class="profession">
-                   Bangalore Section in 2011
-                  </p>
-                  
-                </div>
-                <div class="footer">
-                 
-                </div>
-              </div>
-            </div>
-            <!--end front panel-->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">
-                  
-                </h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h4 class="text-center">
-                  
-                  </h4>
-                  <h3>
-                   
-                  </p>
-                  <h4 class="text-center">
-                   <br><br> Bangalore Section in 2011
-                  </h4>
-                <br><br>  <h3>
-                   For dynamic leadership in spearheading humanitarian and innovative engagement opportunities for young IEEE engineering professionals in India.
-                   </p>
-                </div>
-              </div>
-              <div class="footer">
-                <div class="social-links text-center">
-                 
-                </div>
-              </div>
-            </div>
-            <!--end back panel-->
-          </div>
-          <!--end card-->
-        </div>
-        <!--end card-container-->
-      </div>
-      <!--end col-md-4 col-sm-6-->
-      <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="../bb.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="../11.JFIF" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">
-                 Manjunath Iyer
-                  </h3>
-                  <p class="profession">
-                   Bangalore Section in 2013:
-                  </p>
-                  
-                </div>
-                <div class="footer">
-                  <div class="rating">
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end front panel-->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">
-                 
-                </h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h4 class="text-center">
-                  
-                  </h4>
-                  <h3>
-                   
-                  </p>
-                  <h4 class="text-center">
-                    Bangalore Section in 2013
-                  </h4>
-                 <br><br> <h3>
-                   For continuous support to the IEEE Teacher In-Service Program (TISP) and Student Transition & Elevation Partnership (STEP) events.
-                  </h3>
-                </div>
-              </div>
-              <div class="footer">
-                <div class="social-links text-center">
-                </div>
-              </div>
-            </div>
-            <!--end back panel-->
-          </div>
-          <!--end card-->
-        </div>
-        <!--end card-container-->
-      </div>
-      <!--end col sm 3-->
-      <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="../bb.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="../11.JFIF" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">
-                    Nipun Manral
-                  </h3>
-                  <p class="profession">
-                    Bangalore Section 2015
-                  </p>
-                  
-                </div>
-                <div class="footer">
-                  <div class="rating">
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end front panel-->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">
-                  
-                </h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h4 class="text-center">
-                  
-                  </h4>
-                  <h3>
-                   
-                  </p>
-                  <h4 class="text-center" >
-                   Bangalore Section 2015
-                  </h6>
-                 <br><br><p>
-                   For exemplary leadership and contribution toward student and young professional activities and for continuous efforts to elevate the technical and professional development of IEEE members. Also awarded with IEEE Asia Pacific Young Professional Outstanding Volunteer Award 2016, IEEE Bangalore Best Volunteer Award 2015, IEEE Asia Pacific Outstanding Young Professional Affinity Group Award 2015, IEEE, MGA Young Professionals Achievement Award 2015.
-                  </p>
-                </div>
-              </div>
-              <div class="footer">
-                <div class="social-links text-center">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	  
-	  
-	  
-	  
-	  
-	  
-	  <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="../bb.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="../11.JFIF" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">
-                   Abhishek Appaji
-                  </h3>
-                  <p class="profession">
-                    Bangalore Section 2015
-                  </p>
-                  
-                </div>
-                <div class="footer">
-                  <div class="rating">
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end front panel-->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">
-                  
-                </h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h4 class="text-center">
-                  
-                  </h4>
-                  <h3>
-                   
-                  </p>
-                  <h4 class="text-center" >
-                   Bangalore Section 2015
-                  </h4>
-                  <br><h3>
-New Initiative Program Award at IEEE Region 10 Student, Young Professional, Women in Engineering Congress 2015 held from 9th to 12th July 2015 at Colombo, Srilanka. Out standing volunteer award for Bangalore Section 2019.                  </p>
-                </div>
-              </div>
-              <div class="footer">
-                <div class="social-links text-center">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="cover">
-                <img src="../bb.jpg" />
-              </div>
-              <div class="user">
-                <img class="img-circle" src="../11.JFIF" />
-              </div>
-              <div class="content">
-                <div class="main">
-                  <h3 class="name">
-                   Dr. Ashwini Appaji
-                  </h3>
-                  <p class="profession">
-                    Bangalore Section 2015
-                  </p>
-                  
-                </div>
-                <div class="footer">
-                  <div class="rating">
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end front panel-->
-            <div class="back">
-              <div class="header">
-                <h5 class="motto">
-                  
-                </h5>
-              </div>
-              <div class="content">
-                <div class="main">
-                  
-                  <h3>
-                   
-                  </p>
-                  <h4 class="text-center" >
-                   Bangalore Section 2015
-                  </h4>
-                 <br><br><br><br> <h3>
- Best Presentation at R10 congress 2018 for YP track and poster presentation at Bali Indonesia. Out standing YP Volunteer award 2019 Bangalore section.                  </p>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</header><br><br><br><br><br><div class="container"><center><img src="Bangalore Section.PNG"  width="90%"  class="img-fluid"></div></center>
+<!-- partial --><center><h1 >ABOUT US</h1></center>
+   <section class="inner-wrapper">
+   <article id="tablet">
+     <img src="IEEEBangalore.PNG" class="img1">
+   </article>
+   <aside id="tablet2">
+     <h2>About IEEE Young Professionals</h2>
+     <p>IEEE Young Professionals is an international community of enthusiastic, dynamic,
+and innovative members and volunteers. IEEE is committed to helping young
+professionals evaluate their career goals, polish their professional image, and
+create the building blocks of a lifelong and diverse professional network.
+Affiliation with IEEE Young Professionals is open to Graduate Students and highergrade
+members with early career interests. IEEE Young Professionals provides
+career advantage resources and helps members leverage the power of the global
+network through its expanding Affinity Groups and volunteer opportunities.
+For further information on IEEE Young Professionals please  <a href="yp.ieee.org" >Click Here</a><br></p>
+   </aside>
+ </section>
+ <section class="inner-wrapper-2">
+   <article id="mobile" >
+     <h2>About IEEE Young Professionals Bangalore Affinity Group</h2>
+<p>IEEE Young Professionals Affinity Group in Bangalore Section was formed in the
+year 2000. The young professional volunteers from Bangalore Section have
+stepped up to take larger responsibilities on a global scale such as chairing the
+IEEE Xtreme committee, IEEE Special Interest Group on Humanitarian
+Technologies (SIGHT) committee etc. Several volunteers have been awarded with
+prestigious IEEE awards such as the Young Professional Achievement Award,
+Outstanding Volunteer Award etc.Volunteer growth and member engagement
+has been a core focus for IEEE Young Professionals Bangalore Affinity Group.</p>   </article>
+   <aside class="hand-mobile" style="padding-top:30px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <img src="yp.jpg"  width="400" height="300">
+   </aside>
+ </section>
+ <div class="foo" ><div class="body2" >
+  <footer class="footsie">
+  <div class="leftFooter">
+      <p>
+        &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <span>Useful Links</span>
+          <ul>
+              <li class="list"><a href="http://geordyn.com">Contact Us</a></li>
+              <li class="list"><a href="">R10 YP</a></li>
+              <li class="list"><a href="">India Council</a></li>
+              <li class="list"><a href="">Follow us on Instagram</a></li>
+              <li class="list"><a href="">Follow us on Twitter</a></li>
+          </ul>
+
+      </p>
   </div>
+  <div class="middleFooter">
+      <p>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>Address</span>
+          <ul>
+              <li class="list">ABC</li>
+              <li class="list">ABC</li>
+              <li class="list">Bengaluru, KA</li>
+              <li class="list">560000</li>
+              <li class="list google"><a href="">View on Google Maps</a></li>
+
+          </ul>
+
+      </p>
+  </div>
+  <div class="rightFooter">
+      <p>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <span>Legal</span>
+          <ul>
+              <li class="list">Copyright &copy;2020</li>
+              <li class="list">All rights reserved.</li>
+              <li class="list">Terms &amp; Conditions</li>
+          </ul>
+
+      </p>
+  </div>
+
+</footer>
 </div></div>
 </body>
 </html>
